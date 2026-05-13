@@ -13,9 +13,26 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "The Wedding of Syahlan & Fenny",
-  description: "Join us for our special day. Wedding celebration of Syahlan and Fenny.",
+  description: "Wedding celebration of Syahlan and Fenny.",
+
+  openGraph: {
+    title: "The Wedding of Syahlan & Fenny",
+    description: "Wedding celebration of Syahlan and Fenny.",
+    url: "https://web-wedding-ebon.vercel.app",
+    siteName: "Wedding Invitation",
+    images: [
+      {
+        url: "/images/hero7.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Wedding Thumbnail",
+      },
+    ],
+    locale: "id_ID",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
